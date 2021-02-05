@@ -1,10 +1,10 @@
 <br>
 <h1>New User:</h1>
 
-<%= form_with url: users_path do |f| %>
+<%= form_with model: @user do |f| %>
   <%= f.label :username %>
   <br>
-  <%= f.text_field :username %>
+  <%= f.text_field :username, placeholder: "Your username here"  %>
   <br>
   <%= f.label :email %>
   <br>
