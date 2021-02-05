@@ -1,20 +1,21 @@
-<%= form_for @user do |form| %>
+
+<%= form_tag("/users", :method => "post") do %>
   <div>
-    <%= form.label :username %><br>
-    <%= form.text_field :username %>
+    <%= label_tag :username %><br>
+    <%= text_field_tag(:username) %>
   </div>
 
   <div>
-    <%= form.label :email %><br>
-    <%= form.text_field :email %><br>
+    <%= label_tag :email %><br>
+    <%= text_field_tag(:email) %><br>
   </div>
 
   <div>
-    <%= form.label :password %><br>
-    <%= form.password_field :password %><br>
+    <%= label_tag :password %><br>
+    <%= password_field_tag(:password) %><br>
   </div>
 
   <div>
-    <%= form.submit %>
+    <%= submit_tag %>
   </div>
 <% end %>
