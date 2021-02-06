@@ -1,3 +1,7 @@
 Style/FrozenStringLiteralComment:
   Enabled: false
 
+Metrics/LineLength:
+  Max: 300
+Style/EndOfLine:
+  EnforcedStyle: lf
