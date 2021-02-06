@@ -1,4 +1,4 @@
-#Class User
+# Class User
 
 class User < ApplicationRecord
   validates :username, presence: true
